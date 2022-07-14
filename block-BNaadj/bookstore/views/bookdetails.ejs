@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="bookstore" content="Learning">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="booklist-div1">
+        <h1 class="book-header">Bookstore</h1>
+        <a href="/home/Booklist">Back</a>
+    </div>
+
+    <ul>
+        <li> Name:<%= books.Name %>
+        </li>
+        <li> Description:<%= books.Description %>
+        </li>
+        <li> Author:<%= books.Author %>
+        </li>
+        <div><a href="/home/bookedit/<%= books._id %>">Edit</a></div>
+        <div><a href="/home/bookdelete/<%= books._id %>">delete</a></div>
+    </ul>
+</body>
+
+</html>
