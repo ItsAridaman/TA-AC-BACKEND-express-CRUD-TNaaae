@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="bookstore" content="Learning">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="book-header">BOOKSTORE</h1>
+    <div class="div1">
+        <div class="div1-a">
+            <a href="/home/Booklist">Booklist</a>
+        </div>
+        <div class="div1-b">
+            <a href="/home">Back</a>
+        </div>
+    </div>
+
+    <ul>
+        <% books.forEach(function(book) { %>
+            <li> <a href="/home/bookdetails/<%= book._id%>">Name:<%= book.Name %> </a></li>
+            <% }); %>
+    </ul>
+</body>
+
+</html>
