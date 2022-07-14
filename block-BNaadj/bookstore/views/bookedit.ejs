@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="bookstore" content="Learning">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="booklist-div1">
+        <h1 class="book-header">Bookstore</h1>
+        <a href="/home/Bookdetails/<%= book._id %>">Back</a>
+    </div>
+
+    <form action="/home/bookedit/<%= book._id %>" method="post">
+        <label>Name</label>
+        <input type="text" name="Name" value="<%= book.Name %>" placeholder="Titanic">
+        <label>Description</label>
+        <input type="text" name="Description" value="<%= book.Description %>" placeholder="type description here...">
+        <label>Author</label>
+        <input type="text" name="Author" value="<%= book.Author %>" placeholder="mitchel">
+        <button>
+            Submit
+        </button>
+    </form>
+
+
+
+</body>
+
+</html>
